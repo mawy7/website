@@ -1,0 +1,290 @@
+{% extends "base2.html" %}
+{% load i18n static %}
+{% block meta_title %}{% if page %}{{ page.meta_title }}{% else %}{% trans "About | PyScholars" %}{% endif %}{% endblock %}
+
+
+{% block content %}
+
+	<!-- Body -->
+    <div class="body_wrap">
+        <div class="page_wrap">
+            <div class="top_panel_fixed_wrap"></div>
+            <header class="top_panel_wrap bg_tint_dark">
+					<!-- User menu -->
+					<div class="menu_user_wrap">
+							<div class="content_wrap clearfix">
+								<div class="menu_user_area menu_user_right menu_user_nav_area">
+										<font color="black">Contact us on <a href="tel:+233546998280"><font color="#316b99ff">+233-546998280</font></a> or <a href = "mailto: hello@pyscholars.org"><font color="#316b99ff">hello@pyscholars.org</font></a> / <a href = "mailto: pyscholars@gmail.com"><font color="#316b99ff">pyscholars@gmail.com</font></a></font>
+								</div>
+								<div class="menu_user_area menu_user_left menu_user_contact_area"></div>
+							</div>
+						</div>
+					<!-- Main menu -->
+					<div class="menu_main_wrap logo_left">					
+						<div class="content_wrap clearfix">
+							<!-- Logo -->
+							<div class="logo">
+								<a href="index.html">
+								<img src="{% static 'images/logo.png' %}" class="logo_main" alt="">
+								<img src="{% static 'images/logo.png' %}" class="logo_fixed" alt="">
+								</a>
+							</div>
+							<!-- Logo -->
+							<!-- Search -->
+							<div class="search_wrap search_style_regular search_ajax" title="Open/close search form">
+								<a href="#" class="search_icon icon-search-2"></a>
+								<div class="search_form_wrap">
+									<form method="get" class="search_form" action="#">
+										<button type="submit" class="search_submit icon-zoom-1" title="Start search"></button>
+										<input type="text" class="search_field" placeholder="" value="" name="s" title="" />
+									</form>
+								</div>
+								<div class="search_results widget_area bg_tint_light">
+									<a class="search_results_close icon-delete-2"></a>
+									<div class="search_results_content">
+								</div>
+								</div>
+							</div>
+							<!-- /Search -->
+							<!-- Navigation -->
+							<a href="#" class="menu_main_responsive_button icon-menu-1"></a>
+							<nav class="menu_main_nav_area">
+								<ul id="menu_main" class="menu_main_nav">
+										<li class="menu-item"><a href="home.html">Home</a></li>
+										<li class="menu-item current-menu-parent"><a href="about.html">About</a></li>
+										<li class="menu-item"><a href="clubs.html">Clubs</a></li>
+										<li class="menu-item"><a href="resources.html">Resources</a></li>
+										<li class="menu-item"><a href="blog.html">Blog</a></li>
+										<li class="menu-item"><a href="contact.html">Contact Us</a></li>
+								</ul>
+							</nav>
+							<!-- /Navigation -->
+						</div>
+					</div>
+					<!-- /Main menu -->
+				</header>
+				<!-- Page title -->
+				<div class="page_top_wrap page_top_title page_top_breadcrumbs sc_pt_st1">
+					<div class="content_wrap">
+						<div class="breadcrumbs">
+							<a class="breadcrumbs_item home" href="index.html">Home</a>
+							<span class="breadcrumbs_delimiter"></span>
+							<span class="breadcrumbs_item current">About Us</span>
+						</div>
+						<h1 class="page_title">About Us</h1>
+					</div>
+				</div>
+				<!-- /Page title -->
+			<!-- Content without sidebar -->
+            <div class="page_content_wrap">
+                <div class="content">
+                    <article class="post_item post_item_single page">
+						<section class="post_content">
+							<!-- Info section -->
+							<div class="sc_section accent_top bg_tint_light sc_bg1" data-animation="animated fadeInUp normal">
+								<div class="sc_section_overlay">
+									<div class="sc_section_content">
+										<div class="sc_content content_wrap margin_top_2_5em_imp margin_bottom_2_5em_imp">
+											<h2 class="sc_title sc_title_regular sc_align_center margin_top_0 margin_bottom_085em text_center">What is PyScholars?</h2>
+											<div class="columns_wrap sc_columns columns_nofluid sc_columns_count_2">
+												<div class="column-1_2 sc_column_item sc_column_item_1 sc_info_st1 odd first ">
+													<div class="sc_section font_1_25em lh_1_3em">
+														<span class=" link_color disp_block  font_3_5em lh_1em"></span>
+														<p>
+															The aim of this initiative is focused on students in the senior high level where students would be introduced to Python programming in a relaxed and fun environment. 
+															<br>The idea seeks to inspire students to learn the basic understanding of what programming is, and give them the ability to do some simple (application level) programming where they could build their own games, websites etc as a team or individually.
+															<br>From the selected responses collated from the survey and wider research, Python is a beginner friendly language that could be easily appreciated at this level.  
+																
+														</p>
+													</div>
+												</div>
+												<div class="column-1_2 sc_column_item sc_column_item_2 sc_info_st1 even">
+													<div class="sc_video_player">
+														<div class="sc_video_frame width_200 height_396" data-width="200" data-height="396">
+															<img src="images/pyscholarsLogo.png" alt="">
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /Info section -->
+							<!-- Team section -->
+							<div class="sc_section" data-animation="animated fadeInUp normal">
+								<div class="sc_content content_wrap margin_top_3em_imp margin_bottom_3em_imp">
+									<h2 class="sc_title sc_title_regular sc_align_center text_center margin_top_0 margin_bottom_085em">Meet the Team</h2>
+									<div class="sc_team sc_team_style_1">
+										<div class="sc_columns columns_wrap">
+											<div class="column-1_3">
+												<div class="sc_team_item sc_team_item_1 odd first">
+													<div class="sc_team_item_avatar">
+														<img alt="" src="http://placehold.it/350x290">
+													</div>
+													<div class="sc_team_item_info">
+														<h6 class="sc_team_item_title">
+															<a href="#">John Johnson</a>
+														</h6>
+														<div class="sc_team_item_position">Administrator</div>
+														<div class="sc_team_item_description">
+															<p>Donec ut tincidunt purus. Vestibulum ultrices est id arcu iaculis, quis blandit nunc accumsan.</p>
+														</div>
+														<div class="sc_socials sc_socials_size_small">
+															<div class="sc_socials_item">
+																<a href="#" target="_blank" class="social_icons social_facebook">
+																	<span class="sc_socials_hover social_facebook"></span>
+																</a>
+															</div>
+															<div class="sc_socials_item">
+																<a href="#" target="_blank" class="social_icons social_pinterest">
+																	<span class="sc_socials_hover social_pinterest"></span>
+																</a>
+															</div>
+															<div class="sc_socials_item">
+																<a href="#" target="_blank" class="social_icons social_twitter">
+																	<span class="sc_socials_hover social_twitter"></span>
+																</a>
+															</div>
+															<div class="sc_socials_item">
+																<a href="#" target="_blank" class="social_icons social_gplus">
+																	<span class="sc_socials_hover social_gplus"></span>
+																</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="column-1_3">
+												<div class="sc_team_item sc_team_item_2 even">
+													<div class="sc_team_item_avatar">
+														<img alt="" src="http://placehold.it/350x290">
+													</div>
+													<div class="sc_team_item_info">
+														<h6 class="sc_team_item_title">
+															<a href="#">John Snow</a>
+														</h6>
+														<div class="sc_team_item_position">Translator</div>
+														<div class="sc_team_item_description">
+															<p>Royal L. Garff Presidential Chair in Marketing, Marketing Department, Department of Marketing
+																<br /> Presidential Professor, Marketing Department, University of Utah</p>
+														</div>
+														<div class="sc_socials sc_socials_size_small">
+															<div class="sc_socials_item">
+																<a href="#" target="_blank" class="social_icons social_facebook">
+																	<span class="sc_socials_hover social_facebook"></span>
+																</a>
+															</div>
+															<div class="sc_socials_item">
+																<a href="#" target="_blank" class="social_icons social_pinterest">
+																	<span class="sc_socials_hover social_pinterest"></span>
+																</a>
+															</div>
+															<div class="sc_socials_item">
+																<a href="#" target="_blank" class="social_icons social_twitter">
+																	<span class="sc_socials_hover social_twitter"></span>
+																</a>
+															</div>
+															<div class="sc_socials_item">
+																<a href="#" target="_blank" class="social_icons social_dribbble">
+																	<span class="sc_socials_hover social_dribbble"></span>
+																</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="column-1_3">
+												<div class="sc_team_item sc_team_item_3 odd">
+													<div class="sc_team_item_avatar">
+														<img alt="" src="http://placehold.it/350x290">
+													</div>
+													<div class="sc_team_item_info">
+														<h6 class="sc_team_item_title">
+															<a href="#">Pamela Fryman</a>
+														</h6>
+														<div class="sc_team_item_position">Translator</div>
+														<div class="sc_team_item_description">
+															<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+														</div>
+														<div class="sc_socials sc_socials_size_small">
+															<div class="sc_socials_item">
+																<a href="#" target="_blank" class="social_icons social_facebook">
+																	<span class="sc_socials_hover social_facebook"></span>
+																</a>
+															</div>
+															<div class="sc_socials_item">
+																<a href="#" target="_blank" class="social_icons social_pinterest">
+																	<span class="sc_socials_hover social_pinterest"></span>
+																</a>
+															</div>
+															<div class="sc_socials_item">
+																<a href="#" target="_blank" class="social_icons social_twitter">
+																	<span class="sc_socials_hover social_twitter"></span>
+																</a>
+															</div>
+															<div class="sc_socials_item">
+																<a href="#" target="_blank" class="social_icons social_dribbble">
+																	<span class="sc_socials_hover"></span>
+																</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /Team section -->
+                        </section>
+                    </article>
+                </div>
+            </div>
+            <!-- /Content without sidebar -->
+            
+			<br>
+			<!-- Contacts Footer -->
+            <footer class="contacts_wrap bg_tint_dark contacts_style_dark">
+                <div class="content_wrap">
+                    <div class="logo">
+                        <a href="index.html">
+							<img src="{% static 'images/logoW.png' %}" alt="">
+						</a>
+                    </div>
+                    <div class="contacts_address">
+                        <address class="address_right">
+								Phone: <a href="tel:+233546998280">+233-546998280</a>
+						</address>
+                        <address class="address_left">
+								<a href = "mailto: hello@pyscholars.org">hello@pyscholars.org</a> 
+						</address>
+                    </div>
+                    <div class="sc_socials sc_socials_size_big aligncenter">
+						<div class="sc_socials_item">
+							<a href="https://twitter.com/PythonScholars" target="_blank" class="social_icons social_twitter">
+								<span class="sc_socials_hover social_twitter"></span>
+							</a>
+						</div>
+                        <div class="sc_socials_item">
+							<a href="#" target="_blank" class="social_icons social_instagram">
+								<span class="sc_socials_hover social_instagram"></span>
+							</a>
+						</div>
+                    </div>
+                </div>
+            </footer>
+            <!-- /Contacts Footer -->
+			<!-- Copyright -->
+            <div class="copyright_wrap">
+                <div class="content_wrap">
+                    <p>© 2019 All Rights Reserved. <a href="#">Terms of use</a> and <a href="#">Privacy Policy</a></p>
+                </div>
+            </div>
+			<!-- /Copyright -->
+        </div>
+    </div>
+    <!-- /Body -->
+
+
+{% endblock %}

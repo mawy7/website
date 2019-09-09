@@ -1,0 +1,386 @@
+{% extends "base.html" %}
+{% load i18n static %}
+{% block meta_title %}{% if page %}{{ page.meta_title }}{% else %}{% trans "Home | PyScholars" %}{% endif %}{% endblock %}
+
+
+{% block content %}
+
+
+<body class="page body_style_fullscreen body_filled article_style_stretch top_panel_style_dark top_panel_opacity_transparent top_panel_over menu_right sidebar_hide">
+    <a id="toc_top" class="sc_anchor" title="To Top" data-description="&lt;i&gt;Back to top&lt;/i&gt; - &lt;br&gt;scroll to top of the page" data-icon="icon-angle-double-up" data-url="" data-separator="yes"></a>
+	<!-- Body -->
+    <div class="body_wrap">
+        <div class="page_wrap">
+            <div class="top_panel_fixed_wrap"></div>
+            <header class="top_panel_wrap bg_tint_dark">
+				<!-- User menu -->
+                <div class="menu_user_wrap">
+                    <div class="content_wrap clearfix">
+                        <div class="menu_user_area menu_user_right menu_user_nav_area">
+                            Contact us on <a href="tel:+233546998280">+233-546998280</a> or <a href = "mailto: hello@pyscholars.org">hello@pyscholars.org</a> / <a href = "mailto: pyscholars@gmail.com">pyscholars@gmail.com</a>
+                        </div>
+                        <div class="menu_user_area menu_user_left menu_user_contact_area"></div>
+                    </div>
+                </div>
+				<!-- /User menu -->
+				<!-- Main menu -->
+                <div class="menu_main_wrap logo_left">					
+                    <div class="content_wrap clearfix">
+						<!-- Logo -->
+                        <div class="logo">
+                            <a href="index.html">
+								<img src="{% static 'images/logoW.png' %}" class="logo_main" alt="">
+								<img src="{% static 'images/logoW.png' %}" class="logo_fixed" alt="">
+							</a>
+                        </div>
+						<!-- Logo -->
+						<!-- Search -->
+                        <div class="search_wrap search_style_regular search_ajax" title="Open/close search form">
+                            <a href="#" class="search_icon icon-search-2"></a>
+                            <div class="search_form_wrap">
+                                <form method="get" class="search_form" action="#">
+                                    <button type="submit" class="search_submit icon-zoom-1" title="Start search"></button>
+                                    <input type="text" class="search_field" placeholder="" value="" name="s" title="" />
+                                </form>
+                            </div>
+                            <div class="search_results widget_area bg_tint_light">
+                                <a class="search_results_close icon-delete-2"></a>
+                                <div class="search_results_content">
+							</div>
+                            </div>
+                        </div>
+						<!-- /Search -->
+						<!-- Navigation -->
+                        <a href="#" class="menu_main_responsive_button icon-menu-1"></a>
+						<nav class="menu_main_nav_area">
+							<ul id="menu_main" class="menu_main_nav">
+									<li class="menu-item current-menu-parent"><a href="home.html">Home</a></li>
+									<li class="menu-item"><a href="/about">About</a></li>
+									<li class="menu-item"><a href="/clubs">Clubs</a></li>
+									<li class="menu-item"><a href="/resources">Resources</a></li>
+									<li class="menu-item"><a href="/blog">Blog</a></li>
+									<li class="menu-item"><a href="/contact">Contact Us</a></li>
+							</ul>
+						</nav>
+						<!-- /Navigation -->
+                    </div>
+                </div>
+				<!-- /Main menu -->
+            </header>
+			<!-- Revolution slider -->
+			<section class="slider_wrap slider_fullwide slider_engine_revo slider_alias_education_home_slider_3">
+                <div id="rev_slider_3_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container">
+                    <div id="rev_slider_3_1" class="rev_slider fullwidthabanner disp_none max-height_630">
+                        <ul>
+                            <!-- Slide 1  -->
+                            <li data-transition="random" data-slotamount="7" data-masterspeed="500" data-saveperformance="off" class="texture_bg_slider_full slide1">
+
+                                <img src="{% static 'images/slide1.png' %}" alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="repeat">
+                                <div class="tp-caption titlecentered lfr stb tp-resizeme cust-z-index-5 rs-cust-style7" data-x="center" data-hoffset="0" data-y="center" data-voffset="-40" data-speed="500" data-start="650" data-easing="Power3.easeInOut" data-splitin="lines" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-end="8150" data-endspeed="800">
+									Be introduced to Python programming in a relaxed and fun environment.
+                                </div>
+                            </li>
+                            <!-- Slide 2 -->
+                            <li data-transition="random" data-slotamount="7" data-masterspeed="500" data-saveperformance="off" class="texture_bg_slider slide2">
+                                <img src="{% static 'images/slide2.png' %}" alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="repeat">
+                                <div class="tp-caption title sfr stl tp-resizeme cust-z-index-5 rs-cust-style1" data-x="0" data-y="200" data-speed="500" data-start="600" data-easing="Power3.easeInOut" data-splitin="lines" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-end="8050" data-endspeed="300">
+									Education Center
+                                    <br> and distance education
+                                </div>
+                                <div class="tp-caption slide_text sfr stl tp-resizeme cust-z-index-6 rs-cust-style2" data-x="0" data-y="355" data-speed="500" data-start="1000" data-easing="Power3.easeInOut" data-splitin="lines" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-end="8300" data-endspeed="300">
+									<span class="font-w_400">Online Education leads the world in distance education with high quality online degrees and online courses.</span>
+                                </div>
+                            </li>
+                            <!-- Slide 3 -->
+                            <li data-transition="random" data-slotamount="7" data-masterspeed="500" data-saveperformance="off" class="texture_bg_slider slide3">
+                                <img src="{% static 'images/slide3.png' %}" alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="repeat">
+                                <div class="tp-caption title customin stb tp-resizeme cust-z-index-5 rs-cust-style1" data-x="520" data-y="200" data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:20;transformOrigin:50% 100%;" data-speed="500" data-start="650" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-end="8200" data-endspeed="300">Receive personalized
+                                    <br> coaching
+                                </div>
+                                <div class="tp-caption slide_text customin stb tp-resizeme cust-z-index-6 rs-cust-style2" data-x="530" data-y="355" data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:20;transformOrigin:50% 100%;" data-speed="500" data-start="1050" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-end="8400" data-endspeed="300">
+									<span class="font-w_400">Learning is a collaborative process, and we're here to provide you with guidance every step of the way.</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="tp-bannertimer"></div>
+                    </div>
+                </div>
+            </section>			
+			<!-- /Revolution slider -->
+			<!-- Content -->
+            <div class="page_content_wrap">
+                <div class="content">
+                    <article class="post_item post_item_single page">
+						<section class="post_content">
+							<!-- Features section -->
+							<div class="sc_section" data-animation="animated zoomInUp normal">
+								<div class="sc_content content_wrap margin_top_3em_imp margin_bottom_3em_imp sc_features_st1">
+									<div class="columns_wrap sc_columns columns_fluid sc_columns_count_3">
+										<div class="column-1_3 sc_column_item sc_column_item_1 odd first text_center">
+											<a href="#" class="sc_icon icon-woman-2 sc_icon_shape_round sc_icon_bg_menu menu_dark_color font_5em lh_1em"></a>
+											<div class="sc_section font-w_400 margin_top_1em_imp">
+												<p>
+													<a class="menu_color" href="#">Take computer science courses<br />
+													with personalized support</a>
+												</p>
+											</div>
+										</div>
+										<div class="column-1_3 sc_column_item sc_column_item_2 even text_center">
+											<a href="#" class="sc_icon icon-rocket-2 sc_icon_shape_round sc_icon_bg_menu menu_dark_color font_5em lh_1em"></a>
+											<div class="sc_section font-w_400 margin_top_1em_imp">
+												<p>
+													<a class="menu_color" href="#">Build cool projects<br />
+													to showcase your skills</a>
+												</p>
+											</div>
+										</div>
+										<div class="column-1_3 sc_column_item sc_column_item_3 odd text_center">
+											<a href="#" class="sc_icon icon-world-2 sc_icon_shape_round sc_icon_bg_menu menu_dark_color font_5em lh_1em"></a>
+											<div class="sc_section font-w_400 margin_top_1em_imp">
+												<p>
+													<a class="menu_color" href="#">Earn certificates<br />
+													recognized by Industry</a>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /Features section -->
+							<!-- Video training section -->			
+							<div class="sc_line sc_line_style_solid margin_top_0 margin_bottom_0"></div>
+							<div class="sc_section" data-animation="animated flipInY normal">
+								<div class="sc_content content_wrap margin_top_2_5em_imp margin_bottom_2_5em_imp">
+									<div class="columns_wrap sc_columns columns_nofluid sc_columns_count_2">
+										<div class="column-1_2 sc_column_item sc_column_item_1 odd first res_width_100per_imp">
+											<h3 class="sc_title sc_title_iconed sc_align_left text_left">
+												<span class="sc_title_icon sc_title_icon_top sc_title_icon_medium icon-video-2"></span>
+												Python Scholars
+											</h3>
+											<p>The aim of this initiative is focused on students in the senior high level where students would be introduced to Python programming in a relaxed and fun environment.</p>
+											<a href="courses-streampage.html" class="sc_button sc_button_square sc_button_style_filled sc_button_bg_link sc_button_size_mini sc_button_iconed inherit margin_top_1em margin_bottom_4 margin_left_4">read more...</a>
+										</div>
+										<div class="column-1_2 sc_column_item sc_column_item_2 even res_width_100per_imp">
+											<div class="sc_video_player sc_video_bordered sc_video_st1">
+												<div class="sc_video_frame sc_video_play_button hover_icon hover_icon_play width_100per" data-width="100%" data-height="647" data-video="&lt;iframe class=&quot;video_frame&quot; src=&quot;http://youtube.com/embed/636Dp8eHWnM?autoplay=1&quot; width=&quot;100%&quot; height=&quot;647&quot; frameborder=&quot;0&quot; webkitAllowFullScreen=&quot;webkitAllowFullScreen&quot; mozallowfullscreen=&quot;mozallowfullscreen&quot; allowFullScreen=&quot;allowFullScreen&quot;&gt;&lt;/iframe&gt;">
+													<img alt="" src="http://placehold.it/400x225">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /Video training section -->	
+
+
+
+
+							<!-- Courses section -->
+							<div class="sc_section accent_top bg_tint_light sc_bg1" data-animation="animated zoomIn normal">
+								<div class="sc_section_overlay">
+									<div class="sc_section_content">
+										<div class="sc_content content_wrap margin_top_2_5em_imp margin_bottom_2_5em_imp">
+											<h2 class="sc_title sc_title_regular sc_align_center margin_top_0 margin_bottom_085em text_center">PyScholar Schools</h2>
+											<div class="sc_blogger layout_courses_3 template_portfolio sc_blogger_horizontal no_description">
+												<div class="isotope_wrap" data-columns="3">
+													<!-- Courses item -->
+													<div class="isotope_item isotope_item_courses isotope_column_3">
+														<div class="post_item post_item_courses even">
+															<div class="post_content isotope_item_content ih-item colored square effect_dir left_to_right">
+																<div class="post_featured img">
+																	<a href="paid-course.html">
+																		<img alt="" src="{% static 'images/club1.jpg' %}">
+																	</a>
+																	<h4 class="post_title">
+																		<a href="paid-course.html">School Sample 1</a>
+																	</h4>
+																	<div class="post_descr">
+																		<div class="post_category">
+																			<a href="product-category.html">Accra</a>
+																		</div>
+																	</div>
+																</div>
+																<div class="post_info_wrap info">
+																	<div class="info-back">
+																		<h4 class="post_title">
+																			<a href="paid-course.html">School Sample 1</a>
+																		</h4>
+																		<div class="post_descr">
+																			<p>
+																				<a href="paid-course.html">This is a sample of a PyScholar School Club.</a>
+																			</p>
+																			<div class="post_buttons">
+																				<div class="post_button">
+																					<a href="paid-course.html" class="sc_button sc_button_square sc_button_style_filled sc_button_bg_link sc_button_size_small">LEARN MORE</a>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<!-- /Courses item -->
+													<!-- Courses item -->
+													<div class="isotope_item isotope_item_courses isotope_column_3">
+														<div class="post_item post_item_courses odd">
+															<div class="post_content isotope_item_content ih-item colored square effect_dir left_to_right">
+																<div class="post_featured img">
+																	<a href="#">
+																		<img alt="" src="{% static 'images/club2.jpg' %}">
+																	<h4 class="post_title">
+																		<a href="paid-course.html">School Sample 2</a>
+																	</h4>
+																	<div class="post_descr">
+																		
+																		<div class="post_category">
+																			<a href="product-category.html">Accra</a>
+																		</div>
+																	</div>
+																</div>
+																<div class="post_info_wrap info">
+																	<div class="info-back">
+																		<h4 class="post_title">
+																			<a href="paid-course.html">School Sample 2</a>
+																		</h4>
+																		<div class="post_descr">
+																			<p><a href="paid-course.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a></p>
+																			<div class="post_buttons">
+																				<div class="post_button">
+																					<a href="paid-course.html" class="sc_button sc_button_square sc_button_style_filled sc_button_bg_link sc_button_size_small">LEARN MORE</a>
+																				</div>
+																				
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<!-- /Courses item -->
+													<!-- Courses item -->
+													<div class="isotope_item isotope_item_courses isotope_column_3">
+														<div class="post_item post_item_courses even last">
+															<div class="post_content isotope_item_content ih-item colored square effect_dir left_to_right">
+																<div class="post_featured img">
+																	<a href="paid-course.html">
+																		<img alt="" src="{% static 'images/club.jpg' %}">
+																	</a>
+																	<h4 class="post_title">
+																		<a href="paid-course.html">School Sample 3</a>
+																	</h4>
+																	<div class="post_descr">
+																		
+																		<div class="post_category">
+																			<a href="product-category.html">Accra</a>
+																		</div>
+																	</div>
+																</div>
+																<div class="post_info_wrap info">
+																	<div class="info-back">
+																		<h4 class="post_title">
+																			<a href="paid-course.html">School Sample 3</a>
+																		</h4>
+																		<div class="post_descr">
+																			<p><a href="paid-course.html">Sed interdum felis diam, vitae rutrum urna laoreet vehicula.</a></p>
+																			<div class="post_buttons">
+																				<div class="post_button">
+																					<a href="paid-course.html" class="sc_button sc_button_square sc_button_style_filled sc_button_bg_link sc_button_size_small">LEARN MORE</a>
+																				</div>
+																				
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<!-- /Courses item -->
+												</div>
+											</div>
+											<a href="courses-streampage.html" class="sc_button sc_button_square sc_button_style_filled sc_button_bg_menu sc_button_size_small aligncenter sc_button_iconed icon-graduation margin_top_1em margin_bottom_4 widht_12em">VIEW MORE</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /Courses section -->
+							<!-- Partners section -->
+							<div class="sc_section" data-animation="animated bounceInUp normal">
+								<div class="sc_content content_wrap margin_top_2_5em_imp margin_bottom_2_5em_imp">
+									<div class="sc_section aligncenter width_70per">
+										<h2 class="sc_title sc_title_regular margin_top_0">Our Partners</h2>
+										<p>Thanks to our wonderful sponsors! <br>We extend our sincere appreciation to our sponsors, without whom this would not be possible.
+										</p>
+									</div>
+									<div id="sc_section_4" class="sc_section margin_top_1_5em_imp margin_bottom_0_imp height_75">
+										<div id="sc_section_4_scroll" class="sc_scroll sc_scroll_horizontal swiper-slider-container scroll-container height_75">
+											<div class="sc_scroll_wrapper swiper-wrapper">
+												<div class="sc_scroll_slide swiper-slide">
+													<figure class="sc_image  alignleft sc_image_shape_square margin_right_0_imp">
+														<img src="{% static 'images/partners/psf.png' %}" alt="" />
+													</figure>
+													<figure class="sc_image  alignleft sc_image_shape_square margin_right_0_imp margin_left_4em_imp">
+														<img src="http://placehold.it/155x60" alt="" />
+													</figure>
+													<figure class="sc_image  alignleft sc_image_shape_square margin_right_0_imp margin_left_4em_imp">
+														<img src="http://placehold.it/155x60" alt="" />
+													</figure>
+												</div>
+											</div>
+											<div id="sc_section_4_scroll_bar" class="sc_scroll_bar sc_scroll_bar_horizontal sc_section_471175375_scroll_bar"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /Partners section -->
+												
+							
+                        </section>
+                    </article>
+                </div>
+            </div>
+            <!-- /Content without sidebar -->
+			<br>
+			<!-- Contacts Footer -->
+            <footer class="contacts_wrap bg_tint_dark contacts_style_dark">
+                <div class="content_wrap">
+                    <div class="logo">
+                        <a href="index.html">
+							<img src="{% static 'images/logoW.png' %}" alt="">
+						</a>
+                    </div>
+                    <div class="contacts_address">
+                        <address class="address_right">
+								Phone: <a href="tel:+233546998280">+233-546998280</a>
+						</address>
+                        <address class="address_left">
+								<a href = "mailto: hello@pyscholars.org">hello@pyscholars.org</a> 
+						</address>
+                    </div>
+                    <div class="sc_socials sc_socials_size_big aligncenter">
+						<div class="sc_socials_item">
+							<a href="https://twitter.com/PythonScholars" target="_blank" class="social_icons social_twitter">
+								<span class="sc_socials_hover social_twitter"></span>
+							</a>
+						</div>
+                        <div class="sc_socials_item">
+							<a href="#" target="_blank" class="social_icons social_instagram">
+								<span class="sc_socials_hover social_instagram"></span>
+							</a>
+						</div>
+                    </div>
+                </div>
+            </footer>
+            <!-- /Contacts Footer -->
+			<!-- Copyright -->
+            <div class="copyright_wrap">
+                <div class="content_wrap">
+                    <p>© 2019 All Rights Reserved. <a href="#">Terms of use</a> and <a href="#">Privacy Policy</a></p>
+                </div>
+            </div>
+			<!-- /Copyright -->
+        </div>
+    </div>
+    <!-- /Body -->
+
+{% endblock %}
