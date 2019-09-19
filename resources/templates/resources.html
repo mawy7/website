@@ -1,0 +1,156 @@
+{% extends "base2.html" %}
+{% load i18n static %}
+{% block meta_title %}{% if page %}{{ page.meta_title }}{% else %}{% trans "Resources | PyScholars" %}{% endif %}{% endblock %}
+
+
+{% block content %}
+
+	<!-- Body -->
+    <div class="body_wrap">
+        <div class="page_wrap">
+            <div class="top_panel_fixed_wrap"></div>
+            {% include 'navbarO.html' %}
+				<!-- Page title -->
+				<div class="page_top_wrap page_top_title page_top_breadcrumbs sc_pt_st1">
+					<div class="content_wrap">
+						<div class="breadcrumbs">
+							<a class="breadcrumbs_item home" href="/">Home</a>
+							<span class="breadcrumbs_delimiter"></span>
+							<span class="breadcrumbs_item current">Resources</span>
+						</div>
+						<h1 class="page_title">Resources</h1>
+					</div>
+				</div>
+				<!-- /Page title -->
+			<!-- Content without sidebar -->
+           			 <div class="page_content_wrap">
+                <div class="content_wrap">
+                    <div class="content">
+                        <article class="post_item post_item_single page">
+                            <section class="post_content">
+                            	<div class="sc_section" data-animation="animated fadeInUp normal">
+									<div class="sc_line sc_line_style_solid margin_top_2"></div>
+									<h2></h2>
+									<p align="center">Want to learn more about coding and building projects? Use the links below for information and tutorials.</p>
+									<div id="sc_blogger_20" class="sc_blogger layout_square_3 template_portfolio sc_blogger_horizontal">
+										<div class="isotope_wrap" data-columns="3">
+											
+											<div class="isotope_item isotope_item_square isotope_item_square_4 isotope_column_4">
+												<div class="post_item post_item_square post_item_square_4 odd">
+													<div class="post_content isotope_item_content ih-item colored circle effect20 bottom_to_top">
+														<div class="post_featured img">
+															<a href="/clubs/details">
+																<img alt="" src="{% static 'images/resources/HourofCodeKA.png' %}">
+															</a>
+														</div>
+														<div class="post_info_wrap info">
+															<div class="info-back">
+																<h3 class="post_title">
+																	<a href="/clubs/details" target="/">Hour of Code</a>
+																</h3>
+																<div class="post_descr">
+																	<p>
+																		<a href="/clubs/details" target="/">Try an Hour of Code™ with Khan Academy</a>
+																	</p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="isotope_item isotope_item_square isotope_item_square_4 isotope_column_4">
+												<div class="post_item post_item_square post_item_square_4 odd">
+													<div class="post_content isotope_item_content ih-item colored circle effect20 bottom_to_top">
+														<div class="post_featured img">
+															<a href="/clubs/details">
+																<img alt="" src="{% static 'images/resources/code1.png' %}">
+															</a>
+														</div>
+														<div class="post_info_wrap info">
+															<div class="info-back">
+																<h3 class="post_title">
+																	<a href="https://code.org/" target="/">Code</a>
+																</h3>
+																<div class="post_descr">
+																	<p>
+																		<a href="https://code.org/" target="/">Every student in every school should have the opportunity to learn computer science...</a>
+																	</p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											
+
+											<div class="isotope_item isotope_item_square isotope_item_square_4 isotope_column_4">
+												<div class="post_item post_item_square post_item_square_4 odd">
+													<div class="post_content isotope_item_content ih-item colored circle effect20 bottom_to_top">
+														<div class="post_featured img">
+															<a href="/clubs/details">
+																<img alt="" src="{% static 'images/resources/codecademy.png' %}">
+															</a>
+														</div>
+														<div class="post_info_wrap info">
+															<div class="info-back">
+																<h3 class="post_title">
+																	<a href="https://www.codecademy.com/" target="/">Codecademy</a>
+																</h3>
+																<div class="post_descr">
+																	<p>
+																		<a href="https://www.codecademy.com/" target="/">The Easiest Way to Learn to Code</a>
+																	</p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="isotope_item isotope_item_square isotope_item_square_4 isotope_column_4">
+												<div class="post_item post_item_square post_item_square_4 odd">
+													<div class="post_content isotope_item_content ih-item colored circle effect20 bottom_to_top">
+														<div class="post_featured img">
+															<a href="/clubs/details">
+																<img alt="" src="{% static 'images/resources/khanA.png' %}">
+															</a>
+														</div>
+														<div class="post_info_wrap info">
+															<div class="info-back">
+																<h3 class="post_title">
+																	<a href="https://www.khanacademy.org/" target="/">KhanAcademy</a>
+																</h3>
+																<div class="post_descr">
+																	<p>
+																		<a href="https://www.khanacademy.org/" target="/">For every student, every classroom. Real results.</a>
+																	</p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+
+
+
+
+											
+										</div>
+
+									</div>
+								</div>
+							</section>
+						</article>
+					</div>
+				</div>
+			</div>
+            <!-- /Content without sidebar -->
+			{% include 'footerO.html' %}
+        </div>
+    </div>
+    <!-- /Body -->
+
+
+{% endblock %}

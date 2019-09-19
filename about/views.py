@@ -5,6 +5,6 @@ from django.template import RequestContext
 
 
 def about(request):
-    context = {}
+    context = {'nbar': 'about'}
     template = 'about.html'
     return render(request, template, context)

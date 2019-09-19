@@ -1,0 +1,128 @@
+{% extends "base2.html" %}
+{% load i18n static %}
+{% block meta_title %}{% if page %}{{ page.meta_title }}{% else %}{% trans "Clubs | PyScholars" %}{% endif %}{% endblock %}
+
+
+{% block content %}
+
+	<!-- Body -->
+    <div class="body_wrap">
+        <div class="page_wrap">
+            <div class="top_panel_fixed_wrap"></div>
+            {% include 'navbarO.html' %}
+				<!-- Page title -->
+				<div class="page_top_wrap page_top_title page_top_breadcrumbs sc_pt_st1">
+					<div class="content_wrap">
+						<div class="breadcrumbs">
+							<a class="breadcrumbs_item home" href="/">Home</a>
+							<span class="breadcrumbs_delimiter"></span>
+							<span class="breadcrumbs_item current">Clubs</span>
+						</div>
+						<h1 class="page_title">Clubs</h1>
+					</div>
+				</div>
+				<!-- /Page title -->
+			<!-- Content without sidebar -->
+           
+
+<!-- Content -->
+			 <div class="page_content_wrap">
+                <div class="content_wrap">
+                    <div class="content">
+                        <article class="post_item post_item_single page">
+                            <section class="post_content">
+                            	<div class="sc_section" data-animation="animated fadeInUp normal">
+									<div class="sc_line sc_line_style_solid margin_top_0"></div>
+									<h2></h2>
+									<div id="sc_blogger_20" class="sc_blogger layout_square_3 template_portfolio sc_blogger_horizontal">
+										<div class="isotope_wrap" data-columns="3">
+											<div class="isotope_item isotope_item_square isotope_item_square_3 isotope_column_3">
+												<div class="post_item post_item_square post_item_square_3 odd">
+													<div class="post_content isotope_item_content ih-item colored circle effect20 bottom_to_top">
+														<div class="post_featured img">
+															<a href="/clubs/details">
+																<img alt="" src="{% static 'images/clubs/sample1.png' %}">
+															</a>
+														</div>
+														<div class="post_info_wrap info">
+															<div class="info-back">
+																<h4 class="post_title">
+																	<a href="/clubs/details">School Samlpe One</a>
+																</h4>
+																<div class="post_descr">
+																	<p>
+																		<a href="/clubs/details">Sed orci dolor, pulvinar nec luctus a, malesuada ac nisl. Aliquam eleifend et dui et suscipit...</a>
+																	</p>
+																	<a href="/clubs/details"><span class="hover_icon icon-plus-2"></span></a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="isotope_item isotope_item_square isotope_item_square_3 isotope_column_3">
+												<div class="post_item post_item_square post_item_square_3 even">
+													<div class="post_content isotope_item_content ih-item colored circle effect20 bottom_to_top">
+														<div class="post_featured img">
+															<a href="/clubs/details">
+																<img alt="" src="{% static 'images/clubs/sample2.png' %}">
+															</a>
+														</div>
+														<div class="post_info_wrap info">
+															<div class="info-back">
+																<h4 class="post_title">
+																	<a href="/clubs/details">Schhol Sample 2</a>
+																</h4>
+																<div class="post_descr">
+																	<p>
+																		<a href="/clubs/details">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus...</a>
+																	</p>
+																	<a href="/clubs/details"><span class="hover_icon icon-plus-2"></span></a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="isotope_item isotope_item_square isotope_item_square_3 isotope_column_3">
+												<div class="post_item post_item_square post_item_square_3 post_format_gallery odd">
+													<div class="post_content isotope_item_content ih-item colored circle effect20 bottom_to_top">
+														<div class="post_featured img">
+															<a href="post-gallery-format.html">
+																<img alt="" src="{% static 'images/clubs/sample1.png' %}">
+															</a>
+														</div>
+														<div class="post_info_wrap info">
+															<div class="info-back">
+																<h4 class="post_title">
+																	<a href="post-gallery-format.html">School Sample 3</a>
+																</h4>
+																<div class="post_descr">
+																	<p>
+																		<a href="post-gallery-format.html">Cras et fringilla lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada...</a>
+																	</p>
+																	<a href="post-gallery-format.html"><span class="hover_icon icon-plus-2"></span></a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+						</article>
+					</div>
+				</div>
+			</div>
+
+           
+            <!-- /Content without sidebar -->
+			{% include 'footerO.html' %}
+        </div>
+    </div>
+    <!-- /Body -->
+
+
+{% endblock %}

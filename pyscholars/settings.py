@@ -12,6 +12,13 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 
 import os
 
+try:
+   from .secrets import *
+except ImportError:
+    raise Exception("A secrets.py file is required to run this project")
+
+
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -42,6 +49,14 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'home',
     'about',
+    'clubs',
+    'contact_us',
+    'pyscholars',
+    'blog',
+    'resources',
+    'captcha',
+    'crispy_forms',
+
 ]
 
 MIDDLEWARE = [

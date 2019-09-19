@@ -1,0 +1,83 @@
+{% extends "base2.html" %}
+{% load crispy_forms_tags %}
+{% load i18n static %}
+{% block meta_title %}{% if page %}{{ page.meta_title }}{% else %}{% trans "Contact Us | PyScholars" %}{% endif %}{% endblock %}
+
+
+{% block content %}
+
+  <!-- Body -->
+    <div class="body_wrap">
+        <div class="page_wrap">
+            <div class="top_panel_fixed_wrap"></div>
+            {% include 'navbarO.html' %}
+        <!-- Page title -->
+        <div class="page_top_wrap page_top_title page_top_breadcrumbs sc_pt_st1">
+          <div class="content_wrap">
+            <div class="breadcrumbs">
+              <a class="breadcrumbs_item home" href="/">Home</a>
+              <span class="breadcrumbs_delimiter"></span>
+              <span class="breadcrumbs_item current">Contact Us</span>
+            </div>
+            <h1 class="page_title">Contact Us</h1>
+          </div>
+        </div>
+        <!-- /Page title -->
+      <!-- Content without sidebar -->
+           
+
+ <!-- Contact Form -->
+          
+
+
+<!-- Contact form -->
+              <div class="sc_section bg_tint_dark sc_contact_bg_img">
+                <div class="sc_section_overlay sc_contact_bg_color" data-overlay="0.8" data-bg_color="#024b5e">
+                  <div class="sc_section_content">
+                    <div class="sc_content content_wrap margin_top_3em_imp margin_bottom_3_5em_imp">
+                      <div id="sc_contact_form" class="sc_contact_form sc_contact_form_standard aligncenter width_80per">
+                        <h2 class="sc_contact_form_title">Contact Us Today</h2>
+                        <p class="sc_contact_form_description">Your email address will not be published. Required fields are marked *</p>
+                        <form id="sc_contact_form_1" data-formtype="contact" method="post" action="#">
+                          <div class="sc_contact_form_info">
+                            <div class="sc_contact_form_item sc_contact_form_field label_over">
+                              <label class="required" for="sc_contact_form_username">Name</label>
+                              <input id="sc_contact_form_username" type="text" name="username" placeholder="Name *">
+                            </div>
+                            <div class="sc_contact_form_item sc_contact_form_field label_over">
+                              <label class="required" for="sc_contact_form_email">E-mail</label>
+                              <input id="sc_contact_form_email" type="text" name="email" placeholder="E-mail *">
+                            </div>
+                            <div class="sc_contact_form_item sc_contact_form_field label_over">
+                              <label class="required" for="sc_contact_form_subj">Subject</label>
+                              <input id="sc_contact_form_subj" type="text" name="subject" placeholder="Subject">
+                            </div>
+                          </div>
+                          <div class="sc_contact_form_item sc_contact_form_message label_over">
+                            <label class="required" for="sc_contact_form_message">Message</label>
+                            <textarea id="sc_contact_form_message" name="message" placeholder="Message"></textarea>
+                          </div>
+                          <div class="sc_contact_form_item sc_contact_form_message label_over"  align="s">
+                            {{ form.captcha|as_crispy_field }}
+                          </div>
+                          <div class="sc_contact_form_item sc_contact_form_button">
+                            
+                            <button>SEND MESSAGE</button>
+                          </div>
+                          <div class="result sc_infobox"></div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /Contact form -->
+           
+            <!-- /Content without sidebar -->
+      {% include 'footerO.html' %}
+        </div>
+    </div>
+    <!-- /Body -->
+
+
+{% endblock %}

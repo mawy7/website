@@ -1,0 +1,46 @@
+{% load staticfiles %}
+{% load static %}
+
+
+{% block footer %}
+
+			<br>
+			<!-- Contacts Footer -->
+            <footer class="contacts_wrap bg_tint_dark contacts_style_dark">
+                <div class="content_wrap">
+                    <div class="logo">
+                        <a href="index.html">
+							<img src="{% static 'images/2.png' %}" alt="">
+						</a>
+                    </div>
+                    <div class="contacts_address">
+                        <address class="address_right">
+								Phone: <a href="tel:+233546998280">+233-546998280</a>
+						</address>
+                        <address class="address_left">
+								<a href = "mailto: hello@pyscholars.org">hello@pyscholars.org</a>
+						</address>
+                    </div>
+                    <div class="sc_socials sc_socials_size_big aligncenter">
+						<div class="sc_socials_item">
+							<a href="https://twitter.com/PythonScholars" target="_blank" class="social_icons social_twitter">
+								<span class="sc_socials_hover social_twitter"></span>
+							</a>
+						</div>
+                        <div class="sc_socials_item">
+							<a href="#" target="_blank" class="social_icons social_instagram">
+								<span class="sc_socials_hover social_instagram"></span>
+							</a>
+						</div>
+                    </div>
+                </div>
+            </footer>
+            <!-- /Contacts Footer -->
+			<!-- Copyright -->
+            <div class="copyright_wrap">
+                <div class="content_wrap">
+                    <p>© 2019 All Rights Reserved. <a href="#">Terms of use</a> and <a href="#">Privacy Policy</a></p>
+                </div>
+            </div>
+			<!-- /Copyright -->
+{% endblock %}

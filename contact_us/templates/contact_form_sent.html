@@ -1,0 +1,35 @@
+{% extends "base2.html" %}
+{% load crispy_forms_tags %}
+{% load i18n static %}
+{% block meta_title %}{% if page %}{{ page.meta_title }}{% else %}{% trans "Contact Us | PyScholars" %}{% endif %}{% endblock %}
+
+
+{% block content %}
+
+  <!-- Body -->
+    <div class="body_wrap">
+        <div class="page_wrap">
+            <div class="top_panel_fixed_wrap"></div>
+            {% include 'navbarO.html' %}
+        <!-- Page title -->
+        <div class="page_top_wrap page_top_title page_top_breadcrumbs sc_pt_st1">
+          <div class="content_wrap">
+            <div class="breadcrumbs">
+              <a class="breadcrumbs_item home" href="/">Home</a>
+              <span class="breadcrumbs_delimiter"></span>
+              <span class="breadcrumbs_item current">Contact Us</span>
+            </div>
+            <h1 class="page_title">Contact Us</h1>
+          </div>
+        </div>
+        <!-- /Page title -->
+      <!-- Content without sidebar -->
+           
+
+      {% include 'footerO.html' %}
+        </div>
+    </div>
+    <!-- /Body -->
+
+
+{% endblock %}

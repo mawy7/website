@@ -25,9 +25,9 @@ from home import views
 urlpatterns = [
     path('', include('home.urls', namespace='home')),
     path('about/', include('about.urls', namespace='about')),
-    #path('', include('blog.urls', namespace='blog')),
-    #path('', include('clubs.urls', namespace='clubs')),
-    #path('', include('resources.urls', namespace='resources')),
-    #path('', include('contact_us.urls', namespace='contact_us')),
+    path('blog', include('blog.urls', namespace='blog')),
+    path('clubs', include('clubs.urls', namespace='clubs')),
+    path('resources', include('resources.urls', namespace='resources')),
+    path('contact', include('contact_us.urls')),
     path('admin/', admin.site.urls),
 ]
