@@ -6,8 +6,6 @@
 {% block content %}
 
 
-<body class="page body_style_fullscreen body_filled article_style_stretch top_panel_style_dark top_panel_opacity_transparent top_panel_over menu_right sidebar_hide">
-    <a id="toc_top" class="sc_anchor" title="To Top" data-description="&lt;i&gt;Back to top&lt;/i&gt; - &lt;br&gt;scroll to top of the page" data-icon="icon-angle-double-up" data-url="" data-separator="yes"></a>
 	<!-- Body -->
     <div class="body_wrap">
         <div class="page_wrap">
@@ -154,7 +152,7 @@
 									<div class="columns_wrap sc_columns columns_nofluid sc_columns_count_2">
 										<div class="column-1_2 sc_column_item sc_column_item_1 odd first res_width_100per_imp">
 											<h3 class="sc_title sc_title_iconed sc_align_left text_left">
-												<span class="sc_title_icon sc_title_icon_top sc_title_icon_medium icon-video-2"></span>
+												<span class="sc_title_icon sc_title_icon_top sc_title_icon_medium "></span>
 												Python Scholars
 											</h3>
 											<p>The aim of this initiative is focused on students in the senior high level where students would be introduced to Python programming in a relaxed and fun environment.</p>
@@ -341,43 +339,7 @@
             </div>
             <!-- /Content without sidebar -->
 			<br>
-			<!-- Contacts Footer -->
-            <footer class="contacts_wrap bg_tint_dark contacts_style_dark">
-                <div class="content_wrap">
-                    <div class="logo">
-                        <a href="index.html">
-							<img src="{% static 'images/logoW.png' %}" alt="">
-						</a>
-                    </div>
-                    <div class="contacts_address">
-                        <address class="address_right">
-								Phone: <a href="tel:+233546998280">+233-546998280</a>
-						</address>
-                        <address class="address_left">
-								<a href = "mailto: hello@pyscholars.org">hello@pyscholars.org</a> 
-						</address>
-                    </div>
-                    <div class="sc_socials sc_socials_size_big aligncenter">
-						<div class="sc_socials_item">
-							<a href="https://twitter.com/PythonScholars" target="_blank" class="social_icons social_twitter">
-								<span class="sc_socials_hover social_twitter"></span>
-							</a>
-						</div>
-                        <div class="sc_socials_item">
-							<a href="#" target="_blank" class="social_icons social_instagram">
-								<span class="sc_socials_hover social_instagram"></span>
-							</a>
-						</div>
-                    </div>
-                </div>
-            </footer>
-            <!-- /Contacts Footer -->
-			<!-- Copyright -->
-            <div class="copyright_wrap">
-                <div class="content_wrap">
-                    <p>© 2019 All Rights Reserved. <a href="#">Terms of use</a> and <a href="#">Privacy Policy</a></p>
-                </div>
-            </div>
+			{% include 'footerO.html' %}
 			<!-- /Copyright -->
         </div>
     </div>

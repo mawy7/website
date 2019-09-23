@@ -61,6 +61,13 @@
 	background-image: url(../images/socials/twitter.png);
 }
 
+.social_instagram_dark {
+	background-image: url(../images/socials/instagram_dark.png);
+}
+
+.social_instagram {
+	background-image: url(../images/socials/instagram.png);
+}
 .social_gplus{
 	background-image: url(../images/socials/gplus.png);
 }

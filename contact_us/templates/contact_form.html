@@ -38,7 +38,7 @@
                       <div id="sc_contact_form" class="sc_contact_form sc_contact_form_standard aligncenter width_80per">
                         <h2 class="sc_contact_form_title">Contact Us Today</h2>
                         <p class="sc_contact_form_description">Your email address will not be published. Required fields are marked *</p>
-                        <form id="sc_contact_form_1" data-formtype="contact" method="post" action="#">
+                         <form method="POST">  {% csrf_token %}
                           <div class="sc_contact_form_info">
                             <div class="sc_contact_form_item sc_contact_form_field label_over">
                               <label class="required" for="sc_contact_form_username">Name</label>
@@ -60,11 +60,12 @@
                           <div class="sc_contact_form_item sc_contact_form_message label_over"  align="s">
                             {{ form.captcha|as_crispy_field }}
                           </div>
-                          <div class="sc_contact_form_item sc_contact_form_button">
-                            
-                            <button>SEND MESSAGE</button>
-                          </div>
                           <div class="result sc_infobox"></div>
+
+                          <div>
+                            <button class="button-main"  id="contact_us" type="submit"><span type="submit">Send message</span></button>
+                          </div>
+                          
                         </form>
                       </div>
                     </div>

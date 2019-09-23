@@ -1,61 +1,62 @@
 {% load staticfiles %}
 {% load static %}
-
-
 {% block headerother %}
+ <header class="top_panel_wrap bg_tint_light">
+				<!-- User menu -->
+                <div class="menu_user_wrap">
+                    <div class="content_wrap clearfix">
+                        <div class="menu_user_area menu_user_right menu_user_nav_area">
 
-            <header class="top_panel_wrap bg_tint_dark">
-					<!-- User menu -->
-					<div class="menu_user_wrap">
-							<div class="content_wrap clearfix">
-								<div class="menu_user_area menu_user_right menu_user_nav_area">
-										<font color="black">Contact us on <a href="tel:+233546998280"><font color="#316b99ff">+233-546998280</font></a> or <a href = "mailto: pyscholars@gmail.com"><font color="#316b99ff">pyscholars@gmail.com</font></a></font>
-								</div>
-								<div class="menu_user_area menu_user_left menu_user_contact_area"></div>
-							</div>
-						</div>
-					<!-- Main menu -->
-					<div class="menu_main_wrap logo_left">
-						<div class="content_wrap clearfix">
-							<!-- Logo -->
-							<div class="logo">
-								<a href="index.html">
+                        </div>
+                        <div class="menu_user_area menu_user_left menu_user_contact_area"><font color="black">Contact us on <a href="tel:+233546998280"><font color="#316b99ff">+233-546998280</font></a> or <a href = "mailto: pyscholars@gmail.com"><font color="#316b99ff">pyscholars@gmail.com</font></a></font></div>
+                    </div>
+                </div>
+				<!-- /User menu -->
+				<!-- Main menu -->
+                <div class="menu_main_wrap logo_left">					
+                    <div class="content_wrap clearfix">
+						<!-- Logo -->
+                        <div class="logo">
+								<a href="/">
 								<img src="{% static 'images/logo.png' %}" class="logo_main" alt="">
 								<img src="{% static 'images/logo.png' %}" class="logo_fixed" alt="">
 								</a>
 							</div>
-							<!-- Logo -->
-							<!-- Search -->
-							<div class="search_wrap search_style_regular search_ajax" title="Open/close search form">
-								<a href="#" class="search_icon icon-search-2"></a>
-								<div class="search_form_wrap">
-									<form method="get" class="search_form" action="#">
-										<button type="submit" class="search_submit icon-zoom-1" title="Start search"></button>
-										<input type="text" class="search_field" placeholder="" value="" name="s" title="" />
-									</form>
-								</div>
-								<div class="search_results widget_area bg_tint_light">
-									<a class="search_results_close icon-delete-2"></a>
-									<div class="search_results_content">
-								</div>
-								</div>
+						<!-- Logo -->
+						<!-- Search -->
+                        <div class="search_wrap search_style_regular search_ajax" title="Open/close search form">
+                            <a href="#" class="search_icon icon-search-2"></a>
+                            <div class="search_form_wrap">
+                                <form method="get" class="search_form" action="#">
+                                    <button type="submit" class="search_submit icon-zoom-1" title="Start search"></button>
+                                    <input type="text" class="search_field" placeholder="" value="" name="s" title="" />
+                                </form>
+                            </div>
+                            <div class="search_results widget_area bg_tint_light">
+                                <a class="search_results_close icon-delete-2"></a>
+                                <div class="search_results_content">
 							</div>
-							<!-- /Search -->
-							<!-- Navigation -->
-							<a href="#" class="menu_main_responsive_button icon-menu-1"></a>
-							<nav class="menu_main_nav_area">
-								<ul id="menu_main" class="menu_main_nav">
-										<li class="menu-item {% if nbar == 'home' %}current-menu-parent{% endif %}"><a href="/">Home</a></li>
-										<li class="menu-item {% if nbar == 'about' %}current-menu-parent{% endif %}"><a href="/about">About</a></li>
-										<li class="menu-item {% if nbar == 'clubs' %}current-menu-parent{% endif %}"><a href="/clubs">Clubs</a></li>
-										<li class="menu-item {% if nbar == 'resources' %}current-menu-parent{% endif %}"><a href="/resources">Resources</a></li>
-										<li class="menu-item {% if nbar == 'blog' %}current-menu-parent{% endif %}"><a href="/blog">Blog</a></li>
-										<li class="menu-item {% if nbar == 'contact' %}current-menu-parent{% endif %}"><a href="/contact">Contact Us</a></li>
-								</ul>
-							</nav>
-							<!-- /Navigation -->
-						</div>
-					</div>
-					<!-- /Main menu -->
-				</header>
+                            </div>
+                        </div>
+						<!-- /Search -->
+						<!-- Navigation -->
+                        <a href="#" class="menu_main_responsive_button icon-menu-1"></a>
+						<nav class="menu_main_nav_area">
+							<ul id="menu_main" class="menu_main_nav">
+								<li class="menu-item {% if nbar == 'home' %}current-menu-parent{% endif %}"><a href="/">Home</a></li>
+								<li class="menu-item {% if nbar == 'about' %}current-menu-parent{% endif %}"><a href="/about">About</a></li>
+								<li class="menu-item {% if nbar == 'clubs' %}current-menu-parent{% endif %}"><a href="/clubs">Clubs</a></li>
+								<li class="menu-item {% if nbar == 'resources' %}current-menu-parent{% endif %}"><a href="/resources">Resources</a></li>
+								<li class="menu-item {% if nbar == 'blog' %}current-menu-parent{% endif %}"><a href="/blog">Blog</a></li>
+								<li class="menu-item {% if nbar == 'contact' %}current-menu-parent{% endif %}"><a href="/contact">Contact Us</a></li>
+							</ul>
+						</nav>
+						<!-- /Navigation -->
+                    </div>
+                </div>
+				<!-- /Main menu -->
+            </header>
+
+
+
 {% endblock %}
