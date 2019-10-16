@@ -1,0 +1,75 @@
+{% extends "base2.html" %}
+{% load i18n static %}
+{% block meta_title %}{% if page %}{{ page.meta_title }}{% else %}{% trans "Blog | PyScholars" %}{% endif %}{% endblock %}
+{% load hitcount_tags %}
+
+{% block content %}
+
+	<!-- Body -->
+  <div class="body_wrap archive">
+    <div class="page_wrap">
+        <div class="top_panel_fixed_wrap"></div>
+        {% include 'navbarO.html' %}
+    <!-- Page title -->
+    <div class="page_top_wrap page_top_title page_top_breadcrumbs sc_pt_st1">
+      <div class="content_wrap">
+        <div class="breadcrumbs">
+          <a class="breadcrumbs_item" href="/">Home</a>
+          <span class="breadcrumbs_delimiter"></span>
+          <a class="breadcrumbs_item " href="/blog">Blog</a>
+          <span class="breadcrumbs_delimiter"></span>
+          <span class="breadcrumbs_item current home">{{ post.title }}</span>
+        </div>
+        <h2 class="page_title">{{ post.title }}</h2>
+      </div>
+    </div>
+    <!-- /Page title -->
+  <!-- Content without sidebar -->
+       
+
+<!-- Content -->
+<div class="page_content_wrap">
+  <div class="content_wrap">
+      <div class="content">
+          <article class="post_item post_item_single post">
+              <section class="post_featured">
+                  <div class="post_thumb" data-image="{{ post.image.url }}" data-title="{{ post.title }}">
+                      <a class="hover_icon hover_icon_view" href="{{ post.image.url }}" title="{{ post.title }}">
+      <img alt="" src="{{ post.image.url }}">
+    </a>
+                  </div>
+              </section>
+              <div class="post_info">
+                  <span class="post_info_item post_info_posted">Posted 
+    <a class="post_info_date date updated" content="{{ post.published_date }}">{{ post.published_date }}</a>
+  </span>
+                  <span class="post_info_item post_info_posted_by vcard">by 
+    <a class="post_info_author">{{ post.author }}</a>
+  </span>
+  <span class="post_info_item post_info_counters">	
+    <span class="post_counters_item post_counters_views icon-eye" title="Views - {% get_hit_count for post %}">{% get_hit_count for post %}</span>
+    
+                  </span>
+              </div>
+              <section class="post_content">
+                  <p>{{ post.text|linebreaksbr }}</p>
+          </article>
+      </div>
+      <hr>
+      {% if user.is_authenticated %} 
+        <a class="btn" href="{% url 'post_edit' post.slug %}"><i class="fa fa-pencil"></i></a>
+        {% endif %}
+  </div>
+</div>
+<!-- /Content -->
+
+
+
+       
+        <!-- /Content without sidebar -->
+  {% include 'footerO.html' %}
+    </div>
+</div>
+<!-- /Body -->
+
+{% endblock %}

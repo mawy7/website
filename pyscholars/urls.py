@@ -25,9 +25,10 @@ from home import views
 urlpatterns = [
     path('', include('home.urls', namespace='home')),
     path('about/', include('about.urls', namespace='about')),
-    path('blog', include('blog.urls', namespace='blog')),
+    path('blog', include('blog.urls')),
     path('clubs', include('clubs.urls', namespace='clubs')),
     path('resources', include('resources.urls', namespace='resources')),
     path('contact', include('contact_us.urls')),
     path('admin/', admin.site.urls),
-]
+] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
+
